@@ -24,7 +24,7 @@ var api = new ParseServer({
   appName: 'Recipe',
   publicServerURL: 'https://cp-recipe.herokuapp.com/parse',
   verifyUserEmails: true,
-  preventLoginWithUnverifiedEmail: true,
+  preventLoginWithUnverifiedEmail: false,
   emailVerifyTokenValidityDuration: 2 * 60 * 60, // 2 hours = 7200 seconds
   emailAdapter: {
     module: 'parse-server-sendgrid-adapter',
